@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Corvette C8 Series</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
@@ -56,8 +56,24 @@
       justify-content: center;
       align-items: center;
       gap: 20px;
+      flex-wrap: wrap;
     }
-    .model p {
+    .stats-box {
+      margin: 20px auto 10px;
+      max-width: 600px;
+      background-color: rgba(255, 0, 0, 0.1);
+      padding: 20px;
+      border: 2px solid #ff2a2a;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+      text-align: left;
+    }
+    .stats-box p {
+      margin: 6px 0;
+      font-size: 1.1em;
+      color: #fff;
+    }
+    .model p.description {
       font-size: 1.1em;
       color: #ddd;
       margin-top: 15px;
@@ -82,51 +98,83 @@
     <div class="model">
       <h2>C8 Stingray</h2>
       <div class="side-by-side">
-        <img src="https://static0.carbuzzimages.com/wordpress/wp-content/uploads/gallery-images/original/1181000/200/1181289.jpg" alt="C8 Stingray Side View" style="width: 300px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjT1beBfvvq05A2PydD-WunPlQ2767-dBObw&s" alt="C8 Side View 2" style="width: 300px;">
+        <img src="https://static0.carbuzzimages.com/wordpress/wp-content/uploads/gallery-images/original/1181000/200/1181289.jpg" alt="C8 Stingray Side View">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjT1beBfvvq05A2PydD-WunPlQ2767-dBObw&s" alt="C8 Side View 2">
       </div>
-      <p>The C8 Stingray is the base model of the eighth-generation Corvette, offering a mid-engine layout, a 6.2L V8 engine, and stunning performance at an incredible value.</p>
+      <div class="stats-box">
+        <p><strong>Engine:</strong> 6.2L V8</p>
+        <p><strong>Horsepower:</strong> 490 hp (495 hp w/ performance exhaust)</p>
+        <p><strong>0–60 mph:</strong> 2.9 seconds</p>
+        <p><strong>Top Speed:</strong> 194 mph</p>
+        <p><strong>Drivetrain:</strong> RWD</p>
+      </div>
+      <p class="description">The C8 Stingray is the base model of the eighth-generation Corvette, offering a mid-engine layout, a 6.2L V8 engine, and stunning performance at an incredible value.</p>
     </div>
 
     <div class="model">
       <h2>C8 Z51</h2>
       <div class="side-by-side">
-        <img src="https://d2zkwf3l6isjy6.cloudfront.net/adventures/eps_6689.png" alt="C8 Z51 Track" style="width: 300px;">
-        <img src="https://hips.hearstapps.com/autoweek/assets/s3fs-public/2019-10/2020-chevrolet-corvette-stingray-012.jpg" alt="C8 Z51 Interior" style="width: 300px;">
+        <img src="https://d2zkwf3l6isjy6.cloudfront.net/adventures/eps_6689.png" alt="C8 Z51 Track">
+        <img src="https://hips.hearstapps.com/autoweek/assets/s3fs-public/2019-10/2020-chevrolet-corvette-stingray-012.jpg" alt="C8 Z51 Interior">
       </div>
-      <p>The Z51 Performance Package adds upgraded suspension, brakes, an electronic limited-slip differential, performance exhaust, and more track-focused features to the base Stingray.</p>
+      <div class="stats-box">
+        <p><strong>Engine:</strong> 6.2L V8</p>
+        <p><strong>Horsepower:</strong> 495 hp</p>
+        <p><strong>0–60 mph:</strong> 2.8 seconds</p>
+        <p><strong>Top Speed:</strong> ~184 mph</p>
+        <p><strong>Upgrades:</strong> Performance exhaust, suspension, brakes, ELSD</p>
+      </div>
+      <p class="description">The Z51 Performance Package adds upgraded suspension, brakes, an electronic limited-slip differential, performance exhaust, and more track-focused features to the base Stingray.</p>
     </div>
 
     <div class="model">
       <h2>C8 Z06</h2>
       <div class="side-by-side">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ7CuTHAPtCdpmXYHhbGNtY0cQN1xwuDw2-A&s" alt="C8 Z06 Interior" style="width: 300px;">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/2023-chevrolet-corvette-z06-107-1664801431.jpg" alt="C8 Z06 best" style="width: 300px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ7CuTHAPtCdpmXYHhbGNtY0cQN1xwuDw2-A&s" alt="C8 Z06 Interior">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/2023-chevrolet-corvette-z06-107-1664801431.jpg" alt="C8 Z06 Exterior">
       </div>
-      <p>The C8 Z06 boasts a naturally aspirated 5.5L flat-plane crank V8 engine that delivers over 670 horsepower, making it the most track-capable Corvette ever made.</p>
+      <div class="stats-box">
+        <p><strong>Engine:</strong> 5.5L flat-plane V8</p>
+        <p><strong>Horsepower:</strong> 670 hp</p>
+        <p><strong>0–60 mph:</strong> 2.6 seconds</p>
+        <p><strong>Top Speed:</strong> 195+ mph</p>
+        <p><strong>Drivetrain:</strong> RWD</p>
+      </div>
+      <p class="description">The C8 Z06 boasts a naturally aspirated 5.5L flat-plane crank V8 engine that delivers over 670 horsepower, making it the most track-capable Corvette ever made.</p>
     </div>
 
     <div class="model">
       <h2>C8 E-Ray</h2>
       <div class="side-by-side">
-        <img src="https://www.motortrend.com/files/667aff204bfd700008076a3f/002-2024-chevrolet-corvette-eray-front-three-quarter-action.jpg?w=768&width=768&q=75&format=webp" alt="2024 Chevrolet Corvette E-Ray" style="width: 100%; max-width: 300px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrPQbE8noSwv8yUqKE-bH2tNr8-CvQibMMkA&s" alt="2024 Chervrolet Corvette E-Ray" style="width: 300px;">
+        <img src="https://www.motortrend.com/files/667aff204bfd700008076a3f/002-2024-chevrolet-corvette-eray-front-three-quarter-action.jpg?w=768&width=768&q=75&format=webp" alt="C8 E-Ray Front">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrPQbE8noSwv8yUqKE-bH2tNr8-CvQibMMkA&s" alt="C8 E-Ray Side">
       </div>
-      <p>The C8 E-Ray is the first hybrid Corvette, combining the classic V8 with electric motors to provide all-wheel drive and quicker acceleration than any previous model.</p>
+      <div class="stats-box">
+        <p><strong>Engine:</strong> 6.2L V8 + Electric Motor</p>
+        <p><strong>Total Power:</strong> 655 hp</p>
+        <p><strong>0–60 mph:</strong> 2.5 seconds</p>
+        <p><strong>Top Speed:</strong> 183 mph</p>
+        <p><strong>Drivetrain:</strong> AWD (first for Corvette)</p>
+      </div>
+      <p class="description">The C8 E-Ray is the first hybrid Corvette, combining the classic V8 with electric motors to provide all-wheel drive and quicker acceleration than any previous model.</p>
     </div>
 
     <div class="model">
-      <h2>C8 ZR1 </h2>
-       <div class="side-by-side">
-       
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTipQeBZL7fdoIW8E-py3cP5320IiuaD7oxTQ&s" alt="C8 ZR1 Image" style="width: 100%; max-width: 300px;">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzXKnwsPUgK9c7s88sZp8aO2vdcwFRYSEpKw&s" alt="C8 ZR1 engine"
-  style="width: 300px;">
+      <h2>C8 ZR1 (Upcoming)</h2>
+      <div class="side-by-side">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTipQeBZL7fdoIW8E-py3cP5320IiuaD7oxTQ&s" alt="C8 ZR1 Side">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzXKnwsPUgK9c7s88sZp8aO2vdcwFRYSEpKw&s" alt="C8 ZR1 Engine">
+      </div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA5ON_rcBELhtSDVyhWzzIYfnOcnHOOwxzGg&s" alt="C8 ZR1 Interior" style="width: 300px; border-radius: 15px; margin: 10px;">
+      <div class="stats-box">
+        <p><strong>Engine:</strong> Twin-turbo 5.5L V8 (expected)</p>
+        <p><strong>Estimated Horsepower:</strong> 850–900 hp</p>
+        <p><strong>0–60 mph:</strong> ~2.5 seconds (est.)</p>
+        <p><strong>Top Speed:</strong> ~210+ mph (est.)</p>
+        <p><strong>Status:</strong> Yet to be released</p>
+      </div>
+      <p class="description">The C8 ZR1 is the ultimate performance C8, expected to feature a twin-turbocharged version of the Z06's engine and push Corvette engineering to new heights.</p>
     </div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA5ON_rcBELhtSDVyhWzzIYfnOcnHOOwxzGg&s" alt="C8 ZR1 Entirior" atyle="width: 50xp;">
-      <p> The C8 ZR1 is the ultimate performance C8, the ZR1 features a twin-turbocharged version of the Z06's engine and push Corvette engineering to new heights.</p>
-      
-    
   </section>
 </body>
 </html>
